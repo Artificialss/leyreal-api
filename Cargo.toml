@@ -1,0 +1,39 @@
+[package]
+name = "leyreal-api-showcase"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+name = "leyreal_api_showcase"
+path = "src/lib.rs"
+
+[[bin]]
+name = "search"
+path = "api/search.rs"
+
+[[bin]]
+name = "by_number"
+path = "api/by_number.rs"
+
+[[bin]]
+name = "by_subject"
+path = "api/by_subject.rs"
+
+[[bin]]
+name = "norm"
+path = "api/norm.rs"
+
+[[bin]]
+name = "status"
+path = "api/status.rs"
+
+[dependencies]
+vercel_runtime = { version = "2", features = ["axum"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hmac = "0.12"
+hkdf = "0.12"
+sha2 = "0.10"
+url = "2"
