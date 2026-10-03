@@ -24,7 +24,7 @@ pub fn demo_paged_result(key: &DemoKeyContext) -> Value {
         "total": 2,
         "page": 1,
         "page_count": 1,
-        "note": "Example data. The real endpoint queries ~99,858 real norms and caps pagination at 5 results x 10 pages."
+        "note": "Example data. The real endpoint queries ~99,922 real norms and caps pagination at 5 results x 10 pages."
     })
 }
 

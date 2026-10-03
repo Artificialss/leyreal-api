@@ -11,7 +11,7 @@
   <a href="https://github.com/Artificialss/leyreal-system"><img alt="Real API" src="https://img.shields.io/badge/real%20api-leyreal--system-informational.svg"></a>
 </p>
 
-Structure, relations, classification, and full text for **99,858 Costa
+Structure, relations, classification, and full text for **99,922 Costa
 Rican legal norms** — laws, executive decrees, municipal regulations,
 treaties, and more — served as a REST/JSON API. Built in Rust, deployed
 on [Vercel's official Rust runtime](https://vercel.com/docs/functions/runtimes/rust).
@@ -245,29 +245,29 @@ curl -H "Authorization: Bearer YOUR_KEY" \
 
 ## Norm types covered
 
-99,858 norms across 17 types, spanning every issuer from the national
+99,922 norms across 17 types, spanning every issuer from the national
 Asamblea Legislativa down to individual municipalities:
 
 | Type | Count |
 |---|---:|
-| Decreto Ejecutivo | 34,644 |
+| Decreto Ejecutivo | 34,655 |
 | Ley | 21,338 |
-| Reglamento | 15,004 |
-| Reglamento municipal | 8,509 |
-| Acuerdo | 6,281 |
-| Resolución | 5,814 |
-| Circular | 4,309 |
-| Acuerdo municipal | 1,433 |
-| Directriz | 1,279 |
+| Reglamento | 15,019 |
+| Reglamento municipal | 8,527 |
+| Acuerdo | 6,283 |
+| Resolución | 5,817 |
+| Circular | 4,315 |
+| Acuerdo municipal | 1,438 |
+| Directriz | 1,281 |
 | Tratados Internacionales | 613 |
 | Decreto TSE | 385 |
-| Aviso | 109 |
+| Aviso | 111 |
 | Normas internacionales sin aprobar | 90 |
 | Opinión | 26 |
 | Constitución Política | 15 |
 | Opinión Consultiva | 5 |
 | Ordenanza | 4 |
-| **Total** | **99,858** |
+| **Total** | **99,922** |
 
 Every norm also carries article-level structure (895,236 articles total,
 each with its full reform history), a 267,710-edge relation graph
@@ -327,10 +327,12 @@ The one exception is `status` above, kept free because it's
 public-interest information (whether a law is currently in force), not
 part of the paid product.
 
-To request a key, visit **[leyreal-web.vercel.app](https://leyreal-web.vercel.app)**
-(custom domain pending). Full,
-current usage terms and pricing live there — that page is the source of
-truth, not this repository.
+To request a key, visit **[leyreal.com/premium](https://www.leyreal.com/premium)**.
+Full, current pricing lives there — individual Premium access, PRO/PRO+/
+Enterprise developer plans built around this same API, and the Alfa
+Dataset (a structured export of the full corpus, for AI labs and
+fine-tuning, separate from this API product) — that page is the source
+of truth, not this repository.
 
 ## What's intentionally not here
 
@@ -358,8 +360,7 @@ social benefit and a transparent ecological footprint, headquartered in
 Turrialba, Costa Rica. This repository is the public architecture
 reference for the paid API; the product itself — free public law lookup,
 an AI legal assistant, and document analysis — lives at
-**[leyreal-web.vercel.app](https://leyreal-web.vercel.app)** (custom
-domain pending).
+**[leyreal.com](https://www.leyreal.com)**.
 
 Under the hood: a Postgres database (hosted on [Neon](https://neon.tech),
 Vercel's Marketplace-native serverless Postgres) holds every norm,
